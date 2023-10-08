@@ -8,6 +8,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import stylesheet from "~/tailwind.css";
+import NavBar from "./components/navBar";
+import React from "react";
+import ShoppingCartModal from "./components/shoppingCartModal";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -22,12 +25,24 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+      <body className="bg-gray-700 text-white">
+        <Layout>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </Layout>
       </body>
     </html>
+  );
+}
+
+function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <NavBar />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
+      <ShoppingCartModal />
+    </>
   );
 }
