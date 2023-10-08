@@ -88,7 +88,7 @@ const ProductSlug = () => {
                 onClick={() => {
                   addToCart(data);
                 }}
-                className="w-full flex-1 bg-purple-300 border border-transparent rounded-md py-3 flex items-center justify-center text-base font-md text-gray-900 hover:bg-purple-200"
+                className="w-full flex-1 bg-purple-300 border border-transparent rounded-md py-3 flex items-center justify-center text-xl font-bold text-slate-900 drop-shadow-2xl hover:bg-purple-200"
               >
                 Bring it home!
               </button>
