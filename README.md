@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/EvanMarie/remixStore.git
-cd your-repo-name
+cd remixStore
 ```
 
 ### 2. Install dependencies:
