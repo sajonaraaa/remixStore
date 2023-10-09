@@ -1,7 +1,3 @@
-Certainly! Below is a template for your project's README file:
-
----
-
 # E-Commerce App with Remix.run, Stripe, Sanity.io, and Tailwind.css
 
 Build a modern and cutting-edge E-Commerce application using the power of Remix.run, Stripe for payment processing, Sanity.io for content management, and Tailwind.css for a visually appealing user interface.
