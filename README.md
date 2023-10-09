@@ -2,7 +2,17 @@
 
 Build a modern and cutting-edge E-Commerce application using the power of Remix.run, Stripe for payment processing, Sanity.io for content management, and Tailwind.css for a visually appealing user interface.
 
-![Screenshot of the App](path-to-screenshot.png) _(Replace "path-to-screenshot.png" with the path to your app's screenshot for a visual teaser)_
+![darkVioletBazaar2](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar2.png)
+
+![darkVioletBazaar3](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar3.png)
+
+![darkVioletBazaar4](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar4.png)
+
+![darkVioletBazaar5](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar5.png)
+
+![darkVioletBazaar6](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar6.png)
+
+![darkVioletBazaar7](http://www.evanmarie.com/content/images/2023/10/darkVioletBazaar7.png)
 
 ## Features
 
@@ -23,11 +33,9 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/EvanMarie/remixStore.git
 cd your-repo-name
 ```
-
-_(Replace "your-username" and "your-repo-name" with your actual GitHub username and repository name.)_
 
 ### 2. Install dependencies:
 
@@ -76,5 +84,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [TailwindCSS Documentation](https://tailwindcss.com/docs)
 
 ---
-
-Remember to replace placeholder texts (like paths or usernames) with your actual details. Hope this helps, and congratulations on completing your project!
