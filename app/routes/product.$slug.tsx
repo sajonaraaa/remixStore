@@ -26,7 +26,7 @@ const ProductSlug = () => {
   const { data } = useLoaderData<typeof loader>() as iAppProps;
   const addToCart = useLove((state) => state.addToCart);
   return (
-    <main className="mt-5">
+    <main className="mt-5 pt-20">
       <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
         <Tab.Group as="div" className="flex flex-col-reverse">
           <div className="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none">
