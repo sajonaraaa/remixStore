@@ -1,4 +1,5 @@
-import { ActionFunctionArgs, json, redirect } from "@remix-run/node";
+import type { ActionFunctionArgs} from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 import { getDomainUrl, getStripeSession } from "~/lib/stripe.server";
 
 export async function action({ request }: ActionFunctionArgs) {

@@ -1,5 +1,6 @@
 export interface Product {
     name: string;
+    currency: string;
     price: number;
     slug: {
         current: string};
@@ -9,14 +10,16 @@ export interface Product {
 
 
 export interface ProductId {
+  [x: string]: any;
   name: string;
   price: number;
-  stripeProductId: string;
+  
   slug: {
     current: string;
   };
   quantity: number;
   description: string;
+  currency: string;
   image: {
     _key: string;
     _type: string;

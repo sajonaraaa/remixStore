@@ -1,5 +1,5 @@
 import Stripe from "stripe";
-import { ProductId } from "./interface";
+import type { ProductId } from "./interface";
 
 export function getDomainUrl(request: Request) {
   const host =
@@ -18,7 +18,7 @@ export const getStripeSession = async (
   items: string,
   domainUrl: string
 ): Promise<string> => {
-  const stripe = new Stripe(process.env.API_KEY as string, {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
     apiVersion: "2023-08-16",
     typescript: true,
   });
@@ -27,7 +27,14 @@ export const getStripeSession = async (
 
   const lineItems = dataObj.map((product: ProductId) => {
     return {
-      price: product.stripeProductId,
+      price_data: {
+        currency: 'usd',
+        product_data: {
+          name: product.name,
+          description: product.description,
+        },
+        unit_amount: product.price * 1000, // Convert price to cents
+      },
       quantity: product.quantity,
       adjustable_quantity: {
         enabled: true,

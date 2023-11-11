@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import {ProductId} from "./interface";
+import type {ProductId} from "./interface";
 
 interface State {
     cart: ProductId[];

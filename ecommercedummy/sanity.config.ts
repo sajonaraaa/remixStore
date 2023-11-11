@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'ecommerceDummy',
+  title: 'ecommerce',
 
   projectId: '78mzcr4c',
   dataset: 'production',
